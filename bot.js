@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on("message", message => {
     if(message.channel.id !== "569880248980865057" || message.author.id === "220598641721737216" || message.member.roles.has("569882837373812768") || message.author.id === "277853383266926592") return;
-    message.delete(1000*60*1).catch(console.error);
+    message.delete(1000*60*5).catch(console.error);
 });
 
 client.on("disconnect", () => {
