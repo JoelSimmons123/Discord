@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on("message", message => {
     if(message.channel.id !== "569880248980865057" || message.member.hasPermission('ADMINISTRATOR') || message.member.roles.has("569882837373812768")) return;
-    message.delete(1000*60*1);
+    message.delete(1000*60*1).catch(console.error);
 });
 
 client.on("disconnect", () => {
